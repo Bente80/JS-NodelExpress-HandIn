@@ -1,0 +1,9 @@
+extends layout
+
+block content
+
+    p Here you can add your joke: #{add}
+    form(name="add", method ="post", action="/storeJoke")
+        div.input
+            input(type="text", name="writejoke")
+            input(type='submit', value='Submit')
