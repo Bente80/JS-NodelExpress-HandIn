@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Index
+  p Welcome to #{userName}
+  a(href= '/random') Show random Joke
+  br
+  a(href= '/jokes') Show all jokes
+  br
+  a(href= '/addJoke') Add new joke
+  br
+  p *** This site uses cookies
