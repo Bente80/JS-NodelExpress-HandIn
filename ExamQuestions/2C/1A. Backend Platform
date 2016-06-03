@@ -1,0 +1,26 @@
+01. Hvorfor ville du overveje et scriptsprog som JavaScript som din Backend Platform?
+
+1. Samme sprog              - i backend/frontend
+
+2. Ingen rod med med tråde  - Event loopet holder styr på opgaverne og sender opgaverne til at lave callbacks når de er
+   Node.js. har eventloop     klar.
+
+3. Node.js er super hurtigt - Læser/skriver til netværksforbindelsen, filsystem eller databasen meget, meget hurtigt.
+
+4. Håndtere et stort antal samtidige forbindelser med højt gennemløb.
+
+5. Hurtige at bygge op med npm.
+
+I lang tid, var JavaScript kun front-end sprog.
+Så kom Google rundt med V8-motor, som tillod JavaScript kører meget hurtigere pga. V8 kompilerer JavaScript til nativ
+maskinkode.
+Dette affødte oprettelsen af ​​ting som Node JS, der gør det muligt for serveren side JavaScript.
+
+Node.js er et open-source, cross-platform runtime invironment til at udvikle ser-side web-applikationer.
+Selvom node.js ikke er et Javascript framework, er mange af dens grundlæggende moduler skrevet i JavaScript,
+og udviklere van skrive nye moduler i JavaScript.
+
+Node.js bruger en event-driven, ikke-blokerende I / O model, der gør det let og effektivt, perfekt
+for data-intensive realtid applikationer, der kører på tværs af distribuerede enheder.
+
+De gennemsnitlige stack (Mongo DB, Express JS, Angular og Node) er en helt ny måde at udvikle web apps.

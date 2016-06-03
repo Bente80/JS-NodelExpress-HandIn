@@ -1,0 +1,32 @@
+02. Forklar Fordele & Ulemper ved brug node.js + Express som backend i forhold til  Java / JAX-RS / Tomcat.
+
+
+_____Java / JAX-RS / Tomcat_________                         _____________JavaScript / node.js / Express________________
+
++ Ægte objektorienterede sprog                                     + Et sprog     - hele applikationen kan laves her.
+
++ Øget læsbarhed på stor kodebase.                                 + Letvægt      - Pakker/funktionalitet kan tilføjes med NPM instal.
+
++ Nemmere at debug                                                 + Modern & Sexy    -> nye ting kommer til.
+
++ Compiler som standard,-> nyttige oplysninger om fejlen.          + Ikke blokering API   -> et eventloop/tråd
+
++ Har eksisteret længe -> Gennemprøvet/stabil server teknologi.    - Uhåndterede fejl vil få serveren til at gå ned.
+
+- Masser af konfigurationen/pakker til at begynde med.             - Kaotisk kode
+
+- Tråde -> hukommelsesintensiv -> vanskelige at arbejde med.       - Nye pakker popper op heletiden
+
+                                                                   - Ikke modnet endnu
+
+                                                                   - usikkerhed om pakker  -> trækkes tilbage
+
+
+________________JS___________
++ Kan bruges til at skabe meget enkle, men også meget komplekse web apps.
+    * En masse I/O, som er super til:
+                                    * web rest- servers,
+                                    * streaming servere,
+                                    * spil, der ikke skal udregne så meget.
+
+Links: http://voidcanvas.com/describing-node-js/

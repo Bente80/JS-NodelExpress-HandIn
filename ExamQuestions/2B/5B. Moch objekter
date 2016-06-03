@@ -1,0 +1,13 @@
+10. Forklar , ved hjælp af relevante eksempler , forskellige måder at håne ud databaser , HTTP - anmodning etc.
+
+Mock objekter -> er simulerede objekter, -> efterligner adfærd virkelige objekter i kontrollerede måder.
+
+Har samme Interface som de virkelige objekter, de efterligner, hvilket giver en klient objekt forbliver uvidende om den bruger en reel
+Objekt eller en mock objekt.
+
+Nock er en HTTP spottende og kræver bibliotek import til node.js
+
+Nock kan anvendes til at teste moduler, der udfører HTTP-anmodninger isoleret ( dvs. uden at foretage en reel netværk
+Drift) .
+
+kig i filen MockingNockAPITest.js.i testAPI mappen.

@@ -1,0 +1,12 @@
+Se på jokesAPI.js i Routes
+
+Se på ServerMoccaAPITest.js
+
+Request er et simpelt framework der er designet til at gøre HTTP kald nemmere.
+
+Jeg har her implementeret og anvendt request-modulet til at udføre kald til mit REST - API ,
+Console logge svaret og chekke om jeg får det ud, som jeg ønskede.
+
+Brug request pakke til preforme HTTP-request, som blev anbefalet i øvelsen.
+
+Man burde lave en sikkerhed så man kan tjekke at API/Mocha virker sammen.

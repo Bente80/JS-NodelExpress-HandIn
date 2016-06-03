@@ -1,0 +1,53 @@
+03. Sammenlign udtrykkelig strategi mod (server side) templating med den, du brugte med Java på anden semester.
+
+På andet semester vi kun brugt JavaServer Pages (JSP) til præsentation og Java til at skrive den logiske adfærd.
+JSP indkapsler layout, så det kunne genbruges i stedet for duplikeret.
+
+    2. sem: Model -> Controller -> Servlet - JSP
+
+Her på fjerde semester bruger vi JavaScript og Express til at gengive en HTML-side, baseret på nogle logiske udtryk.
+Express fødes med et absolut minimum konfiguration.
+    - Derfor må vi vælge en skabelon motor.
+
+I modsætning til på 2. sem er der i Express mange at vælge imellem, alle med forskellig syntaks. Følgende 3 er dog
+alment benyttet:
+    · Jade
+    · EJS (Embedded JavaScript)
+    · Handlebars
+
+    4. sem : Model - > Controller / Router - > Jade / EJS / Handlebars ex .
+
+Jade
+    - En simpel templating sprog , med en mellemrum -signifikant syntaks .
+    - Det er meget ren uden de normale HTML-tags ex . < > Omkring tag navne.
+
+ doctype html
+        html
+          head
+            title Static Jade
+            meta(name="description", content="Static Jade")
+          body
+            h1 Static Jade
+            p You can think of Jade as shorthand for HTML. Tag names are "naked" and start most lines. Indentation dicates element nesting. Period (.) and hash (#) are short hand for CSS classes and IDs. For example <tt>ol#groceries.colorful</tt> produces an ordered list HTML tag with <tt>class="colorful"</tt> and <tt>id="groceries"</tt>.
+
+            ol#groceries.colorful
+              li Apples
+              li Oranges
+              li Bananas
+
+EJS ( Embedded JavaScript ) kombinerer data og en skabelon til at producere HTML.
+      <h1> <%= title %> </h1>
+        <ul>
+        <% for(var i=0; i<supplies.length; i++) {%>
+           <li><%= supplies[i] %></li>
+        <% } %>
+        </ul>
+
+Handlebars skabeloner ligne almindelig HTML , med indlejrede handlebars expressions.
+ <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
+                {{body}}
+            </div>
+        </div>
+* En handlebars expression består af {{, noget indhold, efterfulgt af }}

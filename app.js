@@ -2,9 +2,9 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
-var cookieParser = require('cookie-parser');
+var cookieParser = require('cookie-parser');                                    //______________cookies___________
 var bodyParser = require('body-parser');
-var session = require("express-session");
+var session = require("express-session");                                       //______________Session___________
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -21,13 +21,13 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(cookieParser());                                                              //_____________Cookie____________
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({secret:'secret_3162735',saveUninitialized:true, resave: true}));
+app.use(session({secret:'secret_3162735',saveUninitialized:true, resave: true}));    //______________Session___________
 
 app.use('/api', api);
 
-app.use(function (req, res, next) {
+app.use(function (req, res, next) {         //______________Session___________
   var session = req.session;
   if (session.userName) {
     return next();

@@ -1,0 +1,15 @@
+
+Mokka er et feature-rige JavaScript -skelet, der kører på node.js og browseren, hvilket gør asynkron test enkel.
+
+Mocha test kører serielt, der giver mulighed for fleksibel og nøjagtig rapportering, mens den kortlægger ikke-registrerede exceptions
+til den enkelte test casen.
+
+Mokka kan bruge alle assertion bibliotek Assertion, men her har jeg brugt Chai .
+
+Mocha bruges til unit og integrationstest, og er en stor kandidat til BDD (Behavior Driven Development).
+
+MOCCA OG ASSYNCRON
+Se i filen ServerMoccaAPITester.js filen i testAPI mappen i programmet.
+
+ASYNCRON
+Se programmet JSPeriode2-NodeExpress-Test med calculater.

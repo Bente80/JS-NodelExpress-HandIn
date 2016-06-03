@@ -1,6 +1,4 @@
-/**
- * Created by Bente on 04-03-2016.
- */
+/** Created by Bente on 04-03-2016.*/
 
 var expect = require("chai").expect;
 var jokes = require("../model/jokes");
